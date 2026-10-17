@@ -1,7 +1,7 @@
 // Debug functionality (console logging only)
 export function debugLog(message: string, type: string = 'info'): void {
   // Log to console for development purposes
-  console.log(`[Copydesk] ${message}`);
+  console.log(`[Proofline] ${message}`);
 }
 
 /** `catch` binds `unknown` under strict; the old code read `.message` directly. */

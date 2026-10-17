@@ -9,7 +9,7 @@ import { getIncludeHidden, getScope, setIncludeHidden, setScope } from './scope'
  * the stored settings have arrived, so a slow start never overwrites them with
  * defaults. See docs/superpowers/specs/2026-09-26-copy-tools-design.md §2.
  *
- * Modules signal a change by dispatching `copydesk:settings-changed` on the
+ * Modules signal a change by dispatching `proofline:settings-changed` on the
  * document (tabs, scope) or it is picked up from the controls' `change` events
  * (checkboxes), so no module needs to import this one.
  */
@@ -67,7 +67,7 @@ export function applySettings(settings: Settings): void {
   set('context-columns', settings.contextColumns);
   checks = { ...settings.checks };
   loaded = true;
-  document.dispatchEvent(new CustomEvent('copydesk:settings-applied'));
+  document.dispatchEvent(new CustomEvent('proofline:settings-applied'));
 }
 
 export function getCheckToggles(): Record<string, boolean> {
@@ -88,7 +88,7 @@ export function initSettings(root: Document): void {
   listeners?.abort();
   listeners = new AbortController();
   const { signal } = listeners;
-  root.addEventListener('copydesk:settings-changed', scheduleSave, { signal });
+  root.addEventListener('proofline:settings-changed', scheduleSave, { signal });
   root.addEventListener(
     'change',
     (event) => {

@@ -1,8 +1,15 @@
 # Changelog
 
-All notable changes to Copydesk (formerly MuffinSync) will be documented in this file.
+All notable changes to Proofline (formerly Copydesk and MuffinSync) will be documented in this file.
 
 ## [Unreleased]
+
+### Changed
+- **Renamed from Copydesk to Proofline.** Quark sells an editorial product
+  called CopyDesk for the same job — editing copy inside layouts — and the
+  name was easy to confuse with the CopyDoc plugin. The Figma plugin id is
+  unchanged, so existing installations carry over. The glossary export is
+  now `proofline-glossary.csv`; import accepts any file name.
 
 ## [1.3.0] - 2026-09-26
 

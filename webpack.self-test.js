@@ -3,8 +3,8 @@ const webpack = require('webpack');
 
 /**
  * The development-only self-test plugin (tools/self-test). Built separately
- * from Copydesk so the shipped bundle is never affected: `npm run build:self-test`.
- * It compiles Copydesk's own src/main and src/shared into its bundle, so it
+ * from Proofline so the shipped bundle is never affected: `npm run build:self-test`.
+ * It compiles Proofline's own src/main and src/shared into its bundle, so it
  * always tests the code in the working tree.
  */
 module.exports = {

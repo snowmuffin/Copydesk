@@ -1,6 +1,6 @@
-// Copydesk fixture plugin -- development only, never published.
+// Proofline fixture plugin -- development only, never published.
 //
-// Builds pages with thousands of text layers and times the paths Copydesk
+// Builds pages with thousands of text layers and times the paths Proofline
 // runs over them, for Stage C0 of
 // docs/superpowers/specs/2026-09-26-large-documents-design.md.
 //
@@ -183,7 +183,7 @@ const UI = `
       document.getElementById('state').textContent = msg.text;
     } else if (msg.type === 'report') {
       document.getElementById('state').textContent =
-        'Done. Copy everything below and paste it back into the Copydesk session.';
+        'Done. Copy everything below and paste it back into the Proofline session.';
       const out = document.getElementById('out');
       out.value = msg.text;
       out.select();
@@ -289,7 +289,7 @@ async function measure() {
     measuredAt: new Date().toISOString(),
   };
   const text = JSON.stringify(report, null, 2);
-  console.log('[Copydesk fixture]\n' + text);
+  console.log('[Proofline fixture]\n' + text);
   figma.ui.postMessage({ type: 'report', text: text });
 }
 

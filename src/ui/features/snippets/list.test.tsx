@@ -5,7 +5,7 @@ import { act } from 'preact/test-utils';
 import { SnippetList } from './list';
 
 const snippets = [
-  { id: 'a', name: 'Footer', text: '© 2026 Copydesk' },
+  { id: 'a', name: 'Footer', text: '© 2026 Proofline' },
   { id: 'b', name: 'CTA', text: 'Get started' },
 ];
 let host: HTMLElement;
@@ -36,7 +36,7 @@ describe('SnippetList', () => {
     const rows = host.querySelectorAll('[data-snippet]');
     expect(rows).toHaveLength(2);
     expect(rows[0].textContent).toContain('Footer');
-    expect(rows[0].textContent).toContain('© 2026 Copydesk');
+    expect(rows[0].textContent).toContain('© 2026 Proofline');
   });
 
   it('says there are none yet when the library is empty', () => {

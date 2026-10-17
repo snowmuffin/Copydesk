@@ -77,7 +77,7 @@ function isTabName(value: string | undefined): value is TabName {
 /** Moves to a tab and tells whoever listens, e.g. remembered settings. */
 function choose(name: TabName): void {
   showTab(name);
-  document.dispatchEvent(new CustomEvent('copydesk:settings-changed'));
+  document.dispatchEvent(new CustomEvent('proofline:settings-changed'));
 }
 
 export function initTabs(root: Document): void {

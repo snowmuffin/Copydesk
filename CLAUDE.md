@@ -1,4 +1,4 @@
-# Copydesk — notes for Claude Code
+# Proofline — notes for Claude Code
 
 Figma plugin. Sandbox code is in `src/main`, the UI in `src/ui`, and the
 messages between them in `src/shared/messages.ts`.
@@ -15,7 +15,7 @@ npm run build       # dist/ for the plugin
 
 Unit tests can't reach the Figma API. `tools/self-test` is a dev-only plugin
 that drives the real handler in a real file (see its README). Once the user has
-the **Copydesk Self-Test (dev only)** window open in Figma desktop, you can run
+the **Proofline Self-Test (dev only)** window open in Figma desktop, you can run
 it yourself:
 
 ```bash
@@ -27,5 +27,5 @@ npm run self-test:remote                       # exit 0 pass, 1 failed, 2 no win
   command prints a WARNING when Figma ran an older build; rerun after reopening.
 - Exit 2 with "No Self-Test window connected": ask the user to open the window
   (and allow local network access if Figma asks). Don't retry in a loop.
-- The self-test cannot drive Copydesk's UI. For UI changes, point the user to
+- The self-test cannot drive Proofline's UI. For UI changes, point the user to
   `docs/verification/manual-checklist.md`.

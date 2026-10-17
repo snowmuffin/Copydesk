@@ -2,7 +2,7 @@ import { unwrapMainMessage, unwrapUiMessage, type MainToUi } from '../../../src/
 import type { Handler } from '../../../src/main/handler';
 
 /**
- * Drives Copydesk's real sandbox handler the way its UI does: every message
+ * Drives Proofline's real sandbox handler the way its UI does: every message
  * goes through `unwrapUiMessage` first, and every message the handler sends
  * must pass `unwrapMainMessage`, or the UI would have dropped it.
  */
@@ -20,7 +20,7 @@ export class Session {
   /** Sends one UI message and returns everything the handler sent in answer. */
   async ask(raw: Record<string, unknown>): Promise<MainToUi[]> {
     const message = unwrapUiMessage(raw);
-    if (!message) throw new Error(`Copydesk's contract rejects the UI message ${String(raw.type)}`);
+    if (!message) throw new Error(`Proofline's contract rejects the UI message ${String(raw.type)}`);
     const start = this.sent.length;
     await this.handler.handle(message);
     return this.sent.slice(start);

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Runs the Figma self-test from a terminal (or from Claude Code) while the
- * Copydesk Self-Test window is open in Figma desktop.
+ * Proofline Self-Test window is open in Figma desktop.
  *
  *   npm run self-test:remote            # the 24 tests
  *   npm run self-test:remote -- perf    # the 5,000-layer timing run
@@ -90,8 +90,8 @@ server.on('error', (error) => {
 });
 
 server.listen(PORT, '127.0.0.1', () => {
-  console.log(`Waiting for the Copydesk Self-Test window in Figma desktop (localhost:${PORT})…`);
-  console.log('If it is not open: Plugins → Development → Copydesk Self-Test (dev only).');
+  console.log(`Waiting for the Proofline Self-Test window in Figma desktop (localhost:${PORT})…`);
+  console.log('If it is not open: Plugins → Development → Proofline Self-Test (dev only).');
 });
 
 setTimeout(() => {

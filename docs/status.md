@@ -236,9 +236,13 @@ Publish whichever the Community listing is behind on. What remains is below.
 - Run `tools/self-test` in Figma desktop (all ✓), then
   `docs/verification/manual-checklist.md`. The per-phase parity documents are
   superseded by these two.
-- ~~Decide the plugin's name.~~ Decided 2026-09-26: **Copydesk** (spec §9). The
-  repository was renamed to `snowmuffin/Copydesk` the same day; GitHub redirects
-  the old URL, so an existing clone keeps working without changing its remote.
+- ~~Decide the plugin's name.~~ Decided 2026-09-26: **Copydesk** (spec §9), then
+  renamed **Proofline** on 2026-10-17: Quark's CopyDesk covers the same ground,
+  and Copydesk read too close to the CopyDoc plugin. The plugin id is unchanged.
+- Rename the GitHub repository to `snowmuffin/Proofline`, then point the
+  `package.json` and `CONTRIBUTING.md` URLs at it. GitHub redirects the old URL,
+  so an existing clone keeps working without changing its remote.
+- Rename the Community listing to Proofline when publishing.
 - ~~Settle the format selector.~~ Removed in Stage A.
 - Upload `icon-128.png` as the Community icon when publishing: it was redrawn for
   the rename, and the listing still shows the old muffin until it is replaced.

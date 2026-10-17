@@ -1,5 +1,5 @@
 {
-  "name": "Copydesk Fixture (dev only)",
+  "name": "Proofline Fixture (dev only)",
   "id": "copydesk-fixture-dev",
   "api": "1.0.0",
   "main": "code.js",
@@ -11,6 +11,6 @@
     { "name": "Create page with 5,000 text layers", "command": "create-5000" },
     { "name": "Create page with 20,000 text layers", "command": "create-20000" },
     { "separator": true },
-    { "name": "Measure Copydesk paths on this page", "command": "measure" }
+    { "name": "Measure Proofline paths on this page", "command": "measure" }
   ]
 }

@@ -619,6 +619,11 @@ safe: any regression is unambiguous.
 
 ## 9. Naming
 
+> **Renamed again 2026-10-17: the plugin is Proofline.** Quark sells an
+> editorial product called CopyDesk, and Copydesk read too close to the CopyDoc
+> plugin. Proofline keeps the editorial sense — a proof is copy checked before
+> it is final — and the plugin id is still unchanged.
+>
 > **Decided 2026-09-26: the plugin is renamed Copydesk.** A copy desk is where
 > a newspaper's copy is edited and checked before print, which covers extract,
 > find & replace and review, and leaves room for later tiers. The plugin id is

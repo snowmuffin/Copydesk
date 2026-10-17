@@ -4,7 +4,7 @@ import { check, pick, same, type Session, type TestCase } from './harness';
 import { frame, newPage, REGULAR, text, type Fixture } from './fixture';
 
 /**
- * Every test sends the messages Copydesk's UI would send and checks both what
+ * Every test sends the messages Proofline's UI would send and checks both what
  * comes back and what happened to the document. Tests run in order on one
  * fixture and undo their own document changes where later tests depend on it.
  */
@@ -294,7 +294,7 @@ export function suite(s: Session, f: Fixture): TestCase[] {
       },
     },
     {
-      name: 'Contract: every message Copydesk sent would be accepted by its UI',
+      name: 'Contract: every message Proofline sent would be accepted by its UI',
       async run() {
         same(s.rejected, [], 'rejected message types');
         return `${s.sent.length} messages checked`;
@@ -310,7 +310,7 @@ export function performanceSuite(s: Session, count: number): TestCase[] {
       name: `Performance: extract, search and check on ${count.toLocaleString('en-US')} layers`,
       async run() {
         await figma.loadFontAsync(REGULAR);
-        const page = newPage('Copydesk self-test (performance)');
+        const page = newPage('Proofline self-test (performance)');
         await figma.setCurrentPageAsync(page);
         try {
           for (let i = 0; i < count; i += 20) {

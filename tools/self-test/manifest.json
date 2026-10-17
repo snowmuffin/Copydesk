@@ -1,5 +1,5 @@
 {
-  "name": "Copydesk Self-Test (dev only)",
+  "name": "Proofline Self-Test (dev only)",
   "id": "copydesk-self-test-dev",
   "api": "1.0.0",
   "main": "dist/code.js",

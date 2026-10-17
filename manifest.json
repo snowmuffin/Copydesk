@@ -1,5 +1,5 @@
 {
-  "name": "Copydesk",
+  "name": "Proofline",
   "id": "1532367827686665905",
   "api": "1.0.0",
   "main": "dist/code.js",
@@ -16,7 +16,7 @@
   "permissions": ["currentuser"],
   "documentAccess": "dynamic-page",
   "menu": [
-    { "name": "Open Copydesk", "command": "open-plugin" },
+    { "name": "Open Proofline", "command": "open-plugin" },
     { "separator": true },
     { "name": "Extract & import", "command": "extract" },
     { "name": "Find & replace", "command": "find" },

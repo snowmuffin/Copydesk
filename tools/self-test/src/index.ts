@@ -4,7 +4,7 @@ import { buildFixture, removeFixture } from './fixture';
 import { performanceSuite, suite } from './suite';
 
 /**
- * Copydesk Self-Test: runs Copydesk's real sandbox handler against a real
+ * Proofline Self-Test: runs Proofline's real sandbox handler against a real
  * document built for the purpose, then removes it. Development only; see
  * tools/self-test/README.md.
  */
@@ -110,7 +110,7 @@ function report(outcomes: TestOutcome[]): { summary: string; report: string; fai
     ? `All ${outcomes.length} tests passed.`
     : `${failed.length} of ${outcomes.length} tests failed.`;
   const lines = outcomes.map((o) => `${o.ok ? 'PASS' : 'FAIL'}  ${o.name}${o.detail ? ` — ${o.detail}` : ''}`);
-  const header = `Copydesk self-test, ${new Date().toISOString()} (build ${new Date(__BUILT_AT__).toISOString()})`;
+  const header = `Proofline self-test, ${new Date().toISOString()} (build ${new Date(__BUILT_AT__).toISOString()})`;
   return { summary, report: [header, summary, '', ...lines].join('\n'), failed: failed.length, builtAt: __BUILT_AT__ };
 }
 

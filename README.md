@@ -1,13 +1,13 @@
-# 📝 Copydesk
+# 📝 Proofline
 
 **Extract, edit, find & replace, and review text layers in Figma**
 
-Copydesk (formerly MuffinSync) is a powerful and user-friendly plugin for Figma, designed to streamline the workflow of extracting, editing, and importing text layers directly from your design files. This plugin facilitates efficient collaboration by allowing designers and content creators to modify text content externally and seamlessly integrate those changes back into their Figma projects.
+Proofline (formerly Copydesk and MuffinSync) is a powerful and user-friendly plugin for Figma, designed to streamline the workflow of extracting, editing, and importing text layers directly from your design files. This plugin facilitates efficient collaboration by allowing designers and content creators to modify text content externally and seamlessly integrate those changes back into their Figma projects.
 
 ## ✨ Key Features
 
 ### 1️⃣ Text Layer Extraction (Export)
-- **Comprehensive Traversal**: Copydesk walks every text layer in the selection, the current page, or **all pages**, and can leave out hidden layers (**Include hidden layers**).
+- **Comprehensive Traversal**: Proofline walks every text layer in the selection, the current page, or **all pages**, and can leave out hidden layers (**Include hidden layers**).
 - **Detailed Extraction**: Extracts essential text layer information including:
   - `id`: Unique Figma Node ID
   - `name`: Descriptive layer name
@@ -57,14 +57,14 @@ Copydesk (formerly MuffinSync) is a powerful and user-friendly plugin for Figma,
 
 ### 9️⃣ Conveniences
 - **Remembered settings**: the tab, scope, hidden-layer choice, match options, context columns and check rules come back next time.
-- **Menu entries**: Plugins → Copydesk → Extract & import, Find & replace, Check copy, Generate or Snippets opens that tab directly.
+- **Menu entries**: Plugins → Proofline → Extract & import, Find & replace, Check copy, Generate or Snippets opens that tab directly.
 - **Copy JSON / Paste to import**: move copy to a chat, a translation tool or a doc and back without saving files. Pasted text goes through the same review as a file.
 - **Statistics**: after extracting, layers, words and characters, in total and per frame.
 - **Context columns**: tick **Add context columns** to include `path` (e.g. `Checkout / Summary / Total`) and `length` in CSV and JSON. Import ignores them — except that a row whose id no longer exists is matched to the layer at the same path, so an edited file can be imported into a duplicated design.
 
 ## 🚀 How to Use
 
-1. **Run the Plugin**: Access the plugin via Plugins > Copydesk in your Figma application.
+1. **Run the Plugin**: Access the plugin via Plugins > Proofline in your Figma application.
 2. **Extract Text**:
    - Choose the extraction scope: **Selection** (the layers inside what's currently selected) or **Current page** (everything on the page). Selection is disabled when nothing is selected.
    - Click the "Extract Text Layers" button to initiate the export.
@@ -137,7 +137,7 @@ npm run build:self-test
 
 ### Project Structure
 ```
-Copydesk/
+Proofline/
 ├── src/
 │   ├── main/            # Figma sandbox. No DOM, no network.
 │   │   ├── index.ts     # opens the UI and wires figma.ui to the handler
@@ -190,7 +190,7 @@ Copydesk/
 │   │                    # documents (XLSX, DOCX, Markdown, EPUB), stats, read-zip (test support)
 │   └── ui.html          # markup and styles only; the bundle is inlined at build time
 ├── tools/fixture/        # Dev-only Figma plugin that builds pages of thousands of text layers
-├── tools/self-test/      # Dev-only Figma plugin that runs Copydesk's sandbox handler against a real document
+├── tools/self-test/      # Dev-only Figma plugin that runs Proofline's sandbox handler against a real document
 ├── dist/                 # Build output (generated; not committed)
 ├── manifest.json         # Figma plugin manifest file
 ├── package.json          # Project metadata and dependencies
@@ -236,6 +236,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 🤝 Contributing
 
-We welcome contributions to Copydesk! To get started, please refer to our [Contributing Guide](CONTRIBUTING.md) for detailed instructions on how to fork, clone, and submit changes to the project. 
+We welcome contributions to Proofline! To get started, please refer to our [Contributing Guide](CONTRIBUTING.md) for detailed instructions on how to fork, clone, and submit changes to the project. 
 
-Bug reports and feature suggestions are always welcome and can be submitted through GitHub issues. Thank you for your interest in making Copydesk better! 📝
+Bug reports and feature suggestions are always welcome and can be submitted through GitHub issues. Thank you for your interest in making Proofline better! 📝

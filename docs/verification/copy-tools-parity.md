@@ -14,7 +14,7 @@ Setup: `npm ci && npm run build`, import `manifest.json` into Figma desktop.
 ## Settings and menu
 
 1. Switch to Find, choose All pages, untick Include hidden layers, tick Case
-   sensitive, close the plugin and reopen it with **Open Copydesk**. Expected:
+   sensitive, close the plugin and reopen it with **Open Proofline**. Expected:
    it opens on Find with those choices.
 2. With nothing selected, choose Selection, close and reopen. Expected: Current
    page is chosen (Selection is not available).

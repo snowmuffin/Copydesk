@@ -10,12 +10,12 @@ that only a running plugin shows. The slicing, stop, busy and paging rules are
 unit tested; these check that Figma actually stays responsive.
 
 Setup: `npm ci && npm run build`, import `manifest.json`, and also import the
-fixture plugin (`tools/fixture/README.md`). In a scratch file run **Copydesk
+fixture plugin (`tools/fixture/README.md`). In a scratch file run **Proofline
 Fixture → Create page with 20,000 text layers** and work on that page.
 
 ## 1. A search on a huge page keeps Figma responsive and counts up
 
-1. Copydesk → **Find & Replace**, Find `Sign up`, scope **Current page**, Search.
+1. Proofline → **Find & Replace**, Find `Sign up`, scope **Current page**, Search.
 
 Expected: the status reads "Searching text layers... N of 20,xxx" and N rises.
 While it runs you can pan the canvas and the panel repaints. Results arrive

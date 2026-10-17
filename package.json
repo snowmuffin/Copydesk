@@ -1,5 +1,5 @@
 {
-  "name": "copydesk",
+  "name": "proofline",
   "version": "1.3.0",
   "description": "Figma plugin for extracting, editing, and importing text layers",
   "main": "code.js",

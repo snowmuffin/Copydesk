@@ -1,6 +1,6 @@
 <!-- Use this file to provide workspace-specific custom instructions to Copilot. For more details, visit https://code.visualstudio.com/docs/copilot/copilot-customization#_use-a-githubcopilotinstructionsmd-file -->
 
-# Copydesk - Figma Plugin Development Instructions
+# Proofline - Figma Plugin Development Instructions
 
 This is a Figma plugin project for extracting, editing, and importing text layers.
 

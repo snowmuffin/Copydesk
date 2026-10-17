@@ -63,7 +63,7 @@ export function getScope(): Scope {
 
 /** Tells remembered settings that the user changed something. */
 function settingsChanged(): void {
-  document.dispatchEvent(new CustomEvent('copydesk:settings-changed'));
+  document.dispatchEvent(new CustomEvent('proofline:settings-changed'));
 }
 
 /**

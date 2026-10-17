@@ -43,7 +43,7 @@ function drawOptions(): void {
       onGlossaryChange: (entries) => post({ type: 'save-glossary', entries }),
       onImportGlossary: () => (document.getElementById('glossary-file') as HTMLInputElement | null)?.click(),
       onExportGlossary: () =>
-        attemptDownload(rowsToCSV(glossaryToRows(glossary)), 'copydesk-glossary.csv', mimeTypeFor('csv'), 'csv'),
+        attemptDownload(rowsToCSV(glossaryToRows(glossary)), 'proofline-glossary.csv', mimeTypeFor('csv'), 'csv'),
     }),
     host
   );
@@ -97,7 +97,7 @@ export function initCheck(root: Document): void {
   glossary = [];
   drawOptions();
   // Rule toggles arrive with the remembered settings, after this first draw.
-  root.addEventListener('copydesk:settings-applied', drawOptions);
+  root.addEventListener('proofline:settings-applied', drawOptions);
 
   root.getElementById('check-btn')?.addEventListener('click', () => {
     if (isBusy()) return;

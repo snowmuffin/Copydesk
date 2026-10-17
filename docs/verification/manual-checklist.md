@@ -2,7 +2,7 @@
 
 Before a release, run **`tools/self-test`** first (see its README) — it covers
 everything that touches the document. This list is what it cannot reach:
-Copydesk's own panel. About 20 minutes.
+Proofline's own panel. About 20 minutes.
 
 Setup: `npm ci && npm run build`, import `manifest.json`, open a scratch file
 with a few frames of text on two pages.
@@ -14,7 +14,7 @@ with a few frames of text on two pages.
 - [ ] With nothing selected, **Selection** is greyed out and **Current page** is
       chosen; selecting a frame makes Selection available again.
 - [ ] Close and reopen the plugin: the last tab, scope and options come back.
-- [ ] Each menu entry (Plugins → Copydesk → Extract & import / Find & replace /
+- [ ] Each menu entry (Plugins → Proofline → Extract & import / Find & replace /
       Check copy / Generate / Snippets) opens its tab.
 
 ## Extract and import

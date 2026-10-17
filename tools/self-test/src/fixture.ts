@@ -66,7 +66,7 @@ export function newPage(name: string): PageNode {
 export async function buildFixture(otherPage: PageNode): Promise<Fixture> {
   await Promise.all([figma.loadFontAsync(REGULAR), figma.loadFontAsync(BOLD)]);
 
-  const page = newPage('Copydesk self-test');
+  const page = newPage('Proofline self-test');
   let otherFrame: FrameNode | null = null;
   try {
     return await populate(page, otherPage, (made) => (otherFrame = made));
@@ -123,7 +123,7 @@ async function populate(
   loose.x = 2000;
 
   // Far from anything the user has on that page, and removed afterwards.
-  const otherFrame = frame(otherPage, 'Copydesk self-test (temporary)', -100000, -100000);
+  const otherFrame = frame(otherPage, 'Proofline self-test (temporary)', -100000, -100000);
   onOtherFrame(otherFrame);
   const elsewhere = text(otherFrame, 'Elsewhere', 'Sign up elsewhere');
 
